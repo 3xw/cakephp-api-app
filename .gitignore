@@ -1,8 +1,19 @@
 # JS APPS #
 ###########
+# VUE
 /apps/*/node_modules
 /apps/*/dist-ssr
+/apps/*/dist
 /apps/*/*.local
+
+# REACT
+/apps/*/.pnp
+/apps/*/.pnp.js
+/apps/*/coverage
+/apps/*/build
+/apps/*/npm-debug.log*
+/apps/*/yarn-debug.log*
+/apps/*/yarn-error.log*
 
 # CakePHP specific files #
 ##########################
