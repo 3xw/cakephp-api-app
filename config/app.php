@@ -181,7 +181,7 @@ return [
      */
     'Error' => [
         'errorLevel' => E_ALL,
-        'exceptionRenderer' => ExceptionRenderer::class,
+        'exceptionRenderer' => 'CrudJsonApi\Error\JsonApiExceptionRenderer',//ExceptionRenderer::class,
         'skipLog' => [],
         'log' => true,
         'trace' => true,
