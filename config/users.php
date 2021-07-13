@@ -117,11 +117,11 @@ $config = [
         ],
         'Authenticators' => [
             'Token' => [
-                'className' => 'Authentication.Token',
-                'skipTwoFactorVerify' => true,
-                'header' => null,
-                'queryParam' => 'api_key',
-                'tokenPrefix' => null,
+              'className' => 'Authentication.Token',
+              'skipTwoFactorVerify' => true,
+              'header' => 'Authorization',
+              'queryParam' => null,
+              'tokenPrefix' => 'Bearer',
             ]
         ],
         'Identifiers' => [
