@@ -2,13 +2,7 @@
 
 ## Installation
 ```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
-
-In case you want to use a custom app dir name (e.g. `/myapp/`):
-
-```bash
-composer create-project --prefer-dist cakephp/app myapp
+composer create-project --prefer-dist 3xw/cakephp-api-app myapp
 ```
 
 You can now either use your machine's webserver to view the default home page, or start
