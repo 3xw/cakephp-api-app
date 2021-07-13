@@ -28,6 +28,8 @@ use Cake\Controller\Controller;
 */
 class AppController extends Controller
 {
+
+  use \Crud\Controller\ControllerTrait;
   /**
   * Initialization hook method.
   *
@@ -49,7 +51,13 @@ class AppController extends Controller
         'Crud.Index',
         'Crud.View'
       ],
-      'listeners' => ['CrudJsonApi.JsonApi']
+      'listeners' => [
+        'Crud.Api',
+        'Crud.ApiPagination',
+        'Crud.ApiQueryLog',
+        //'Crud.Search',
+        'CrudJsonApi.JsonApi'
+      ]
     ]);
 
     /*
